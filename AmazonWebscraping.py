@@ -21,13 +21,9 @@ for x in soap.find_all('div',attrs="a-expander-content reviewText review-text-co
     y=x.find('span')
     if y is not None:
         list2.append(y.text)
-list2
-from prettytable import PrettyTable
-table=PrettyTable(["Review","Rating"])
-for i in range(len(list2)):
-    list3=[]
-    list3.append(list[i])
-    list3.append(list2[i])
-    table.add_row(list3)
-print(table)
+print("The Ratings  are")
+print(list)
+print("\nThe Reviews are :")
+print(list2)
+
         
